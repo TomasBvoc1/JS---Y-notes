@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y-notes</title>
+    <link href = "css/Ynotes_style.css" rel="stylesheet">
+    <script src="js/Ynotes_app.js" type="module"></script>
+</head>
+
+<body>
+    <h1>Y-notes</h1>
+    <a id="root">
+        <!-- SIDEBAR section -->
+        <aside class="sidebar">  
+            <h3>Y-notes</h3>
+            <header class="sidebar_header">   
+                <button aria-label="New note" id="create-button" type="button"> New Y-note </button>         
+            </header>
+            <ul id="notes-list"></ul>
+        </aside>  
+    
+        <!-- MAIN section  -->
+        <main class="mainbar">
+            <h3>Y-note editor</h3>
+            <form id="note-editor">   
+                <input aria-label="Note title" name="title" type="text" placeholder="Title">
+                <textarea aria-label="Note body" name="body" type="text" placeholder="Body "> </textarea>
+            </form>
+        </main>
+    </a>
+</body>
+
+
+
+<footer id="subtitle">
+    <br>
+    author:  <em>...</em> 
+</footer>
+
+</html>

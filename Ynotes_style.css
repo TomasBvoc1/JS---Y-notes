@@ -1,0 +1,129 @@
+* { 
+    box-sizing: border-box;
+  }
+
+:root {
+    --color-accent: grey;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 50vw 50vw;  /* vw = 1% of the viewport's width. */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+#root > * {
+    scroll-snap-align: center;
+    height: 100vh;                   /* vh = 1% of the viewport's height. */
+    overflow-y: auto;
+  }
+
+
+.sidebar {
+    padding: 2rem;                  /* rem = Font size of the root element. */
+    background-color: var(--color-accent);
+    font-size: 1.5rem;
+}
+.mainbar {
+    padding: 2rem;
+    background-color: var(--color-accent);
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+body {
+    margin: 0 auto;
+    color: black;
+    background: rgb(72, 81, 83);
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+h1 {font-size: 80px;
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    color: darkorange;
+    text-align: center;
+}  
+
+h3 {font-size: 20px;
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    color: darkorange;
+    text-align: center;
+}       
+
+
+#subtitle {
+    color: white;
+    font-size: 11px;
+    margin: 50px;
+    text-align: right;
+}
+
+#notes-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+
+
+input{
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 255, 255, .125);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 0;
+    margin: 0;
+}
+
+textarea{
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 255, 255, .125);
+    font-size: 1rem;
+    padding: 1rem;
+    border: 0;
+    margin: 0;
+}
+
+
+
+
+#notes-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 1rem 0;
+}
+  
+#notes-list li {
+    display: flex;
+    gap: .5em;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.25em;
+}
+    
+#notes-list li span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#notes-list li button {
+    font-size: 0.75em;
+}
+
+#notes-list li:hover {
+    background-color: rgba(255, 255, 255, .125);
+}
